@@ -1,7 +1,7 @@
-import React, { useContext, Suspense, useEffect, lazy } from 'react'
+import React, { useContext, Suspense, useEffect, lazy ,useState} from 'react'
 import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
 import routes from '../routes'
-
+import axios from 'axios'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 import Main from '../containers/Main'
@@ -12,10 +12,15 @@ const Page404 = lazy(() => import('../pages/404'))
 
 function Layout() {
   const { isSidebarOpen, closeSidebar } = useContext(SidebarContext)
+  const [message, setMessage] = useState('fuck');
   let location = useLocation()
 
   useEffect(() => {
     closeSidebar()
+      axios.get('http://localhost:8081/api/hello').then((res)=>{
+        console.log(res.data);
+        
+      })
   }, [location])
 
   return (
