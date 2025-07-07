@@ -1,13 +1,10 @@
 npm install
-# or
-yarn install
-
-
+(yarn install)
 
 
 npm run dev
-# or
-yarn dev
+
+(yarn dev)
 
 
 
