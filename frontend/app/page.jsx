@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-indigo-600">ClubConnect</h1>
+                <h1 className="text-2xl font-bold text-indigo-600">ClubVerse</h1>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -77,7 +77,7 @@ export default function HomePage() {
                 <Button variant="outline">Login</Button>
               </Link>
               <Link href="/auth/register">
-                <Button>Get Started</Button>
+                <Button>Sign Up</Button>
               </Link>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function HomePage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose ClubConnect?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose ClubVerse?</h2>
             <p className="text-lg text-gray-600">Everything you need to manage and grow your club community</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -293,11 +293,6 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="/help" className="hover:text-white">
-                    Help Center
-                  </Link>
-                </li>
-                <li>
                   <Link href="/contact" className="hover:text-white">
                     Contact Us
                   </Link>
@@ -326,7 +321,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ClubConnect. All rights reserved.</p>
+            <p>&copy; 2024 ClubVerse. All rights reserved.</p>
           </div>
         </div>
       </footer>
