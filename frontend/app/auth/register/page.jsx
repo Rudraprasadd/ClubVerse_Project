@@ -91,7 +91,7 @@ export default function RegisterPage() {
 
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Join ClubConnect</CardTitle>
+            <CardTitle>Join ClubVerse</CardTitle>
             <CardDescription>Fill in your details to create your account</CardDescription>
           </CardHeader>
           <CardContent>

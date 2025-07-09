@@ -105,7 +105,7 @@ export default function ClubsPage() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-indigo-600">ClubConnect</h1>
+                <h1 className="text-2xl font-bold text-indigo-600">ClubVerse</h1>
               </Link>
             </div>
             <div className="flex items-center space-x-4">

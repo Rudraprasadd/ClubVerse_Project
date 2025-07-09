@@ -37,7 +37,7 @@ export default function SuperAdminPage() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-indigo-600">ClubConnect</h1>
+                <h1 className="text-2xl font-bold text-indigo-600">ClubVerse</h1>
               </Link>
               <div className="ml-8">
                 <span className="text-lg font-medium text-gray-900">Super Admin Dashboard</span>
