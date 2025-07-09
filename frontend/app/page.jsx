@@ -97,7 +97,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/auth/register">
               <Button size="lg" className="text-lg px-8 py-3">
-                Join ClubConnect <ArrowRight className="ml-2 h-5 w-5" />
+                Join ClubVerse <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link href="/clubs">
@@ -252,7 +252,7 @@ export default function HomePage() {
       <section className="py-20 bg-indigo-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-indigo-100 mb-8">Join thousands of students already using ClubConnect</p>
+          <p className="text-xl text-indigo-100 mb-8">Join thousands of students already using ClubVerse</p>
           <Link href="/auth/register">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
               Create Your Account <ArrowRight className="ml-2 h-5 w-5" />
@@ -266,7 +266,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">ClubConnect</h3>
+              <h3 className="text-xl font-bold mb-4">ClubVerse</h3>
               <p className="text-gray-400">Connecting students through meaningful club experiences.</p>
             </div>
             <div>

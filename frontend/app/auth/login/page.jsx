@@ -62,7 +62,7 @@ export default function LoginPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubConnect</h1>
+            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubVerse</h1>
           </Link>
           <p className="text-gray-600">Sign in to your account</p>
         </div>

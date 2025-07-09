@@ -74,14 +74,14 @@ export default function RegisterPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubConnect</h1>
+            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubVerse</h1>
           </Link>
           <p className="text-gray-600">Create your student account</p>
         </div>
 
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle>Join ClubConnect</CardTitle>
+            <CardTitle>Join ClubVerse</CardTitle>
             <CardDescription>Fill in your details to create your account</CardDescription>
           </CardHeader>
           <CardContent>

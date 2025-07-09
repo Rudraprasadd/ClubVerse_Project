@@ -4,7 +4,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ClubConnect - College Club Management Platform",
+  title: "ClubVerse - College Club Management Platform",
   description: "Connect, engage, and excel with the ultimate college club management platform",
 }
 
