@@ -1,10 +1,10 @@
-package com.clubverse.ClubVerse;
+package com.clubverse.cv;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClubVerseApplicationTests {
+class CvApplicationTests {
 
 	@Test
 	void contextLoads() {

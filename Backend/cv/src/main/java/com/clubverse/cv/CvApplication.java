@@ -1,13 +1,13 @@
-package com.clubverse.ClubVerse;
+package com.clubverse.cv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ClubVerseApplication {
+public class CvApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClubVerseApplication.class, args);
+		SpringApplication.run(CvApplication.class, args);
 	}
 
 }

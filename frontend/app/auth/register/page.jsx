@@ -10,6 +10,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Eye, EyeOff, User, Mail, Lock } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import axios from "axios"
 
 export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -21,7 +22,7 @@ export default function RegisterPage() {
     confirmPassword: "",
     studentId: "",
     department: "",
-    year: "",
+    phone: "",
   })
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
@@ -49,10 +50,19 @@ export default function RegisterPage() {
       return
     }
 
-    // Simulate registration process
-    setTimeout(() => {
-      router.push("/auth/login")
-    }, 1000)
+    try {
+      console.log(formData)
+      const response = await axios.post("http://localhost:8081/api/register", {
+        ...formData
+      })
+      if (response.data) { }
+      console.log("Registration successful:", response.data)
+      alert("Registration successful!")
+
+    } catch (error) {
+      console.error("Registration failed:", error.response?.data || error.message)
+      alert("Registration failed.")
+    }
   }
 
   const departments = [
@@ -74,7 +84,7 @@ export default function RegisterPage() {
         {/* Header */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubConnect</h1>
+            <h1 className="text-3xl font-bold text-indigo-600 mb-2">ClubVerse</h1>
           </Link>
           <p className="text-gray-600">Create your student account</p>
         </div>
@@ -161,19 +171,16 @@ export default function RegisterPage() {
                   </Select>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="year">Academic Year</Label>
-                  <Select value={formData.year} onValueChange={(value) => handleInputChange("year", value)}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select year" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {years.map((year) => (
-                        <SelectItem key={year} value={year}>
-                          {year}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  <Label htmlFor="year">Phone</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="XXXX XXXXXX"
+                    className="pl-5 pr-5"
+                    value={formData.phone}
+                    onChange={(e) => handleInputChange("phone", e.target.value)}
+                    required
+                  />
                 </div>
               </div>
 
@@ -222,7 +229,7 @@ export default function RegisterPage() {
 
               {/* Error Message */}
               {error && (
-                <Alert variant="destructive">
+                <Alert variant="destructive">-
                   <AlertDescription>{error}</AlertDescription>
                 </Alert>
               )}
