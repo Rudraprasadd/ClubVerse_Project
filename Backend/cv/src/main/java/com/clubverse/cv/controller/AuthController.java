@@ -30,8 +30,5 @@ public class AuthController {
         userService.registerUser(request);
         return ResponseEntity.ok(Map.of("message", "User registered successfully"));
     }
-
-
-    
 }
 
